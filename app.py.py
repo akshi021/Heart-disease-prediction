@@ -9,7 +9,7 @@ with open('model.pkl', 'rb') as file:
     scaler = data['scaler']
 
 # App title
-st.title("Heart Disease Prediction App")
+st.title("Heart Disease Prediction ")
 st.write("Enter patient details below:")
 
 # Input fields
@@ -39,4 +39,5 @@ if st.button("Predict"):
         st.error("⚠️ The model predicts a **high risk** of heart disease.")
     else:
         st.success("✅ The model predicts a **low risk** of heart disease.")
+
 
